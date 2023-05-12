@@ -1,7 +1,5 @@
 * {
-
   box-sizing: border-box;
-
 }
 
 body {
@@ -143,7 +141,6 @@ h2 {
 
 .text {
   display: flex;
-  margin-right: 7rem;
   width: 25rem;
   padding: 20px;
   height: 18.75rem;
@@ -172,9 +169,8 @@ h2 {
 
 .contain {
   display: flex;
-  width: 70%;
-  margin: 0 auto;
-  padding: 50px
+    justify-content: space-evenly;
+    padding: 50px;
 }
 
 
@@ -246,7 +242,6 @@ h2 {
   border: none;
   border-radius: 0.875rem;
   color: black;
-  margin-left: 4.313000000000002rem;
 }
 
 .message:focus {
@@ -270,7 +265,7 @@ h2 {
   font-family: 'Harry P';
   letter-spacing: 0.094rem;
   margin-top: 2.688rem;
-  margin-left: 13.125rem;
+  margin-left: 8.125rem;
 }
 
 .copy:focus {
@@ -295,8 +290,7 @@ footer {
   height: 30px;
 }
 
-/* 
-  .containDetails{
+/* .containDetails{
     width: 100%;
     display:block;
   }
@@ -306,15 +300,18 @@ footer {
   } */
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1200px) {
 
-  .contain,
-  .text,
-  .containDetails {
-    width: auto;
+  /* .contain, .message, .info{
+  width: auto;
+ } */
+  .contain {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
   }
 
-}
 
 /* h3{
     width: 2000px;
