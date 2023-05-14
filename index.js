@@ -11,7 +11,7 @@ function buttonEncrypt() {
 }
 
 function encrypt(encryptString) {
-    const warning = /^[a-z\s+]+$/;//checar
+    const warning = /^[a-z]+(?: [a-z]+)*$/;//checar
 
     let letterChange = [
         ['e', 'enter'],
