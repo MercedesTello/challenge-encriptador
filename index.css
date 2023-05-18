@@ -179,6 +179,7 @@ h2 {
   color: rgb(14, 1, 1);
   text-shadow: 0.1em 0.3em 0.2em rgb(80, 20, 20);
   -webkit-text-stroke: 0.4px rgb(147, 76, 21);
+  resize: none;
 }
 
 
@@ -238,6 +239,7 @@ h2 {
   color: black;
   text-shadow: 0.1em 0.3em 0.2em rgb(80, 20, 20);
   -webkit-text-stroke: 0.4px rgb(147, 76, 21);
+  resize: none;
 }
 
 .message:focus {
