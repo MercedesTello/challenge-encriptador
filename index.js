@@ -1,6 +1,9 @@
 const textEntrie = document.querySelector('.text');
 const messageUser = document.querySelector('.message');
 
+
+
+
 function buttonEncrypt() {
 
     const encrypText = encrypt(textEntrie.value)
@@ -21,7 +24,7 @@ function encrypt(encryptString) {
         ['u', 'ufat']
     ];
     // encryptString= encryptString.toLowerCase()
-    let messageAlert= 'No se ha ingresado ningún mensaje'
+    let messageAlert = 'No se ha ingresado ningún mensaje'
     if (warning.test(encryptString)) {
 
         for (let i = 0; i < letterChange.length; i++) {
@@ -35,13 +38,13 @@ function encrypt(encryptString) {
     } else {
         alert('¡boom! Aún no escribes nada y... ⚯ Recuerda que no debes ingresar🧹 mayúsculas🗲 ni caracteres especiales ❾¾')
         textEntrie.value = '';
-       
-        messageAlert= ''
-        
+
+        messageAlert = ''
+
 
     }
-   
-    message.textContent= messageAlert;
+
+    message.textContent = messageAlert;
 }
 
 function copyMessage() {
@@ -49,7 +52,7 @@ function copyMessage() {
     messageUser.setSelectionRange(0, 99999)
     navigator.clipboard.writeText(messageUser.value);
     messageUser.value = '';
-    messageUser.style.backgroundImage = 'url(imagenes/merodeador.gif)';
+    messageUser.style.backgroundImage = 'url(imagenes/Rrrrrrr-ghghghghgh!.gif)';
 
 
 }
@@ -74,7 +77,7 @@ function decrypt(encryptedString) {
         encryptedString = encryptedString.replaceAll(letterChange[i][0], letterChange[i][1]);
     }
 
-    
+
     return encryptedString;
 }
 

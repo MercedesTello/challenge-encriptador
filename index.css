@@ -84,6 +84,7 @@ body {
   top: 30%;
   left: 85%;
 }
+
 .spark:nth-of-type(11) {
   top: 35%;
   left: 10%;
@@ -136,6 +137,24 @@ body {
   font-size: 3.125em;
   color: rgb(176, 246, 121);
   text-align: center;
+  animation: fade 7s infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    text-shadow: 0 0 0 rgba(255, 255, 255, 0.8);
+  }
+
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  }
+
+  100% {
+    opacity: 0;
+    text-shadow: 0 0 0 rgba(255, 255, 255, 0.8);
+  }
 }
 
 
@@ -157,7 +176,7 @@ body {
 
 h2 {
   margin-top: 0.938rem;
-  margin-bottom: 0.688rem;
+  margin-bottom: 0.68rem;
   color: #DBFA1E;
   text-align: center;
   font-size: 1.25rem;
@@ -194,9 +213,10 @@ h2 {
 
 .contain {
   display: flex;
-    justify-content: space-evenly;
-    padding: 50px;
+  justify-content: space-evenly;
+  padding: 50px;
 }
+
 .indications {
   color: #dbfa1e;
   font-size: 1.25rem;
@@ -232,7 +252,7 @@ h2 {
   box-sizing: border-box;
   padding: 20px;
   background: #dbfa1e5e;
-  background-image: url(imagenes/merodeador.gif);
+  background-image: url(imagenes/harryppotion.gif);
   background-position: right top;
   background-repeat: no-repeat;
   border: none;
@@ -281,7 +301,7 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: baseline;
-  
+
 }
 
 
@@ -290,8 +310,9 @@ footer {
   height: 30px;
   transition: transform;
 }
-.socialNetworks:hover{
-  transform: scale(1.5); 
+
+.socialNetworks:hover {
+  transform: scale(1.5);
 }
 
 @media screen and (max-width: 1200px) {
@@ -303,9 +324,13 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 50px;
-}
-.title{
-  font-size: 3em;
-}
   }
 
+  .title {
+    font-size: 3em;
+
+  }
+}
+#melody{
+  color:#DBFA1E
+}
