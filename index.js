@@ -35,8 +35,10 @@ function encrypt(encryptString) {
 
         }
         return encryptString;
+    } else if (textEntrie.value === '') {
+        alert('🔮🪄¡boom! Aún no escribes nada')
     } else {
-        alert('¡boom! Aún no escribes nada y... ⚯ Recuerda que no debes ingresar🧹 mayúsculas🗲 ni caracteres especiales ❾¾')
+        alert('⚯ Recuerda que no debes ingresar🧹 mayúsculas🗲 ni caracteres especiales ❾¾')
         textEntrie.value = '';
 
         messageAlert = ''
