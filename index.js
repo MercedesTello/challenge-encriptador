@@ -69,11 +69,11 @@ function buttonDecrypt() {
 
 function decrypt(encryptedString) {
     let letterChange = [
-        ['enter', 'e'],
-        ['imes', 'i'],
-        ['ai', 'a'],
+        ['ufat', 'u'],
         ['ober', 'o'],
-        ['ufat', 'u']
+        ['ai', 'a'],
+        ['imes', 'i'],
+        ['enter', 'e']
     ];
     for (let i = 0; i < letterChange.length; i++) {
         encryptedString = encryptedString.replaceAll(letterChange[i][0], letterChange[i][1]);
